@@ -1,0 +1,4 @@
+# ssh bashrc auto start 
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi

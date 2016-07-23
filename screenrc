@@ -1,0 +1,32 @@
+bind ^j focus down
+bind j focus down
+bind ^k focus up
+bind k focus up
+
+bind ^y resize +1
+bind ^u resize -1
+bind t title
+
+bind s split
+bind ^e split
+bind o only
+
+bind ^x remove
+
+caption always "%{by}%{b} Y! %{bw} %Y-%m-%d %0c %{wb} %-w%{r}%n %t%{w}%+w%{k}"
+#caption string "%?%F%{= BW}%?%3n %t%? [%h]%?"
+#caption always
+vbell off
+
+encoding UTF-8
+#encoding big5
+# term dependent
+term xterm-color
+#bindkey [C next
+bind l next
+bind ^l next
+#bindkey [D prev
+bind h prev
+bind ^h prev
+
+defshell -bash
