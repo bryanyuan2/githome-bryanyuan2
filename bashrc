@@ -1,5 +1,7 @@
 if [ "$(uname)" == "Darwin" ]; then
 	export HOME=/Users/cycheng
+	export JAVA_HOME=$(/usr/libexec/java_home)
+
 	if [ -f `brew --prefix`/etc/bash_completion ]; then
 	    . `brew --prefix`/etc/bash_completion
 	fi
@@ -15,7 +17,7 @@ if [ "$(uname)" == "Darwin" ]; then
 	    PS1="\[\033[1;34m\]\A \[\033[1;31m\]\u\[\033[1;33m\]@\[\033[1;32m\]\h\[\033[1;31m\]\[\033[1;35m\] [\w\[\033[1;35m\]]\[\033[1;36m\] >\[\033[0m\] \[\033[32m\]\$(parse_git_branch)\[\033[00m\] "
 	fi
 else
-	export HOME=/home/cycheng
+	export HOME=/root
 	if [ -n "$PS1" ]; then
 	        PS1='\[\033[1;34m\]\A \[\033[1;31m\]\u\[\033[1;33m\]@\[\033[1;32m\]\h\[\033[1;31m\]\[\033[1;35m\] [\w\[\033[1;35m\]]\[\033[1;36m\] >\[\033[0m\]'
 	fi
@@ -40,19 +42,12 @@ alias vi="vim"
 alias vim='env TERM=xterm-256color vim'
 alias log='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 
-
 # git config
 git config --global user.name "bryanyuan2"
 git config --global user.email bryanyuan2@gmail.com
-
-if [ "$(uname)" == "Darwin" ]; then
-	export HOME=/Users/cycheng
-	export JAVA_HOME=$(/usr/libexec/java_home)
-
-	git config --global color.ui true
-	git config --global alias.co checkout
-	git config --global alias.ci commit
-	git config --global alias.st status
-	git config --global alias.br branch
-	git config --global core.autocrlf input
-fi
+git config --global color.ui true
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.br branch
+git config --global core.autocrlf input
