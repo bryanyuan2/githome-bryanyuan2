@@ -3,14 +3,14 @@
 if [ "$(uname)" == "Darwin" ]; then
 	# Mac OSX
 	mv ~/.bash_profile ~/.bash_profile.old
-	ln -s ~/githome/bashrc ~/.bash_profile
+	ln -s ~/githome-bryanyuan2/bashrc ~/.bash_profile
 else
 	# Linux
 	mv ~/.bashrc ~/.bashrc.old
-	ln -s ~/githome/bashrc ~/.bashrc	
+	ln -s ~/githome-bryanyuan2/bashrc ~/.bashrc	
 
 	mv ~/.bash_profile ~/.bashrc_profile.old
-	ln -s ~/githome/bash_profile_linux ~/.bash_profile
+	ln -s ~/githome-bryanyuan2/bash_profile_linux ~/.bash_profile
 fi
 
 
@@ -19,10 +19,10 @@ git clone git@github.com:gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
 mv ~/.vimrc ~/.vimrc.old
-ln -s ~/githome/vimrc ~/.vimrc
+ln -s ~/githome-bryanyuan2/vimrc ~/.vimrc
 mv ~/.screenrc ~/.screenrc.old
-ln -s ~/githome/screenrc ~/.screenrc
+ln -s ~/githome-bryanyuan2/screenrc ~/.screenrc
 mv ~/.gitconfig ~/.gitconfig.old
-ln -s ~/githome/gitconfig ~/.gitconfig
+ln -s ~/githome-bryanyuan2/gitconfig ~/.gitconfig
 mv ~/.gitignore ~/.gitignore.old
-ln -s ~/githome/gitignore ~/.gitignore
+ln -s ~/githome-bryanyuan2/gitignore ~/.gitignore

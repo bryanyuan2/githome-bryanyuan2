@@ -22,8 +22,8 @@ else
 
 fi
 
-source ~/githome/bin/git-completion.bash
-source ~/githome/bin/git-prompt.sh
+source ~/githome-bryanyuan2/bin/git-completion.bash
+source ~/githome-bryanyuan2/bin/git-prompt.sh
 
 PATH=$PATH:$HOME/bin
 export TZ=Asia/Taipei
