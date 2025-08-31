@@ -1,0 +1,8 @@
+# status bar with colors, date, time and window list
+caption always "%{by}%{b} Y! %{bw} %Y-%m-%d %0c %{wb} %-w%{r}%n %t%{w}%+w%{k}"
+# disable visual bell
+vbell off
+# set character encoding to UTF-8
+encoding UTF-8
+# set terminal type to support colors
+term xterm-color
