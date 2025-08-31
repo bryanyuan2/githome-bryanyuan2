@@ -42,7 +42,7 @@ alias vi="vim"
 alias vim='env TERM=xterm-256color vim'
 alias log='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 
-# git config
+# git config setting and alias
 git config --global user.name "bryanyuan2"
 git config --global user.email bryanyuan2@gmail.com
 git config --global color.ui true
